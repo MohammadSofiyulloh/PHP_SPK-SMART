@@ -84,11 +84,11 @@ $page = isset($_GET['page'])?$_GET['page']:"";
 	            $row3x2 = $stmt3x2->fetch();
 	            $ideas = $rowx['id_alternatif'];
 	            echo $hsl = $row3x2['bak'];
-	            if($hsl>=4.5){
+	            if($hsl>=3){
 	            	$ket = "Super";
-	            } else if($hsl>=4){
+	            } else if($hsl>=2.475){
 	            	$ket = "Premium";
-	            } else if($hsl>=3.5){
+	            } else if($hsl>=2.35){
 	            	$ket = "Medium";
 	            } else{
 	            	$ket = "Rendah";
@@ -102,11 +102,11 @@ $page = isset($_GET['page'])?$_GET['page']:"";
             </td>
             <td>
                 <?php
-            	if($hsl>=4.5){
+            	if($hsl>=3){
 	            	$ket2 = "Super";
-	            } else if($hsl>=4){
+	            } else if($hsl>=2.475){
 	            	$ket2 = "Premium";
-	            } else if($hsl>=3.5){
+	            } else if($hsl>=2.35){
 	            	$ket2 = "Medium";
 	            } else{
 	            	$ket2 = "Rendah";

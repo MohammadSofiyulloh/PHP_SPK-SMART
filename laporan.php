@@ -154,11 +154,11 @@ window.location.assign("login.php")
 	            $row3x2 = $stmt3x2->fetch();
 	            $ideas = $rowx['id_alternatif'];
 	            echo $hsl = $row3x2['bak'];
-	            if($hsl>=4.5){
+	            if($hsl>=3.5){
 	            	$ket = "Super";
-	            } else if($hsl>=4){
+	            } else if($hsl>=3){
 	            	$ket = "Premium";
-	            } else if($hsl>=3.5){
+	            } else if($hsl>=2.5){
 	            	$ket = "Medium";
 	            } else{
 	            	$ket = "Rendah";
@@ -167,11 +167,11 @@ window.location.assign("login.php")
                     </td>
                     <td>
                         <?php
-            	if($hsl>=4.5){
+            	if($hsl>=3.5){
 	            	$ket2 = "Super";
-	            } else if($hsl>=4){
+	            } else if($hsl>=3){
 	            	$ket2 = "Premium";
-	            } else if($hsl>=2){
+	            } else if($hsl>=2.5){
 	            	$ket2 = "Medium";
 	            } else{
 	            	$ket2 = "Rendah";
